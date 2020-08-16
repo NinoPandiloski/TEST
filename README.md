@@ -14,17 +14,20 @@ The Snakefile along with all scripts and configuration files are ready for downl
 
 ## Built With
 
-# Snakemake
-* Snakemake (v. )
-* R (v. )
+### Snakemake (v. 5.2.4)
 
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
+* FastQC (v. 0.11.8)
+* MultiQC (v. 1.2)
+* Bowtie (v. 2.3.4.2)
+* Samtools (v 1.9)
+* bamCoverage (v. __)
+* SEACR (v. 1.3)
+* SEACR_R (v. 1.3) 
+* BEDTools (v. 2.26.0)
+* DeepTools (v. 2.5.4)
+  
+### R (v. 4.0.0)
+* Data parsing and visualization script
 
 ### And coding style tests
 
