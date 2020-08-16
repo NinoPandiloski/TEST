@@ -1,12 +1,13 @@
 # Co-localization of HP1 isoforms and H3K9me3 in neural stem cells using NGS 
 
-A streamlined pipeline created for the analysis of Cut&Run data
+A streamlined pipeline created for the analysis of Cut&Run data. H3K9me3 and HP1 isoform signals are processed using Snakemake to inspect their abundancy, co-localization, and potential redundancy. The files containing the results of the analysis are then processed in R to extract further information.
 
 ## Getting Strated
 
 ### Program Description
 
-H3K9me3 and HP1 isoform signals are processed using Snakemake to inspect their abundancy, co-localization, and potential redundancy. The files containing the results of the analysis are then processed in R to extract further information.
+A Snakemake script was written to perform the following methods on
+### Snakemake
 
 ### Installing
 
@@ -29,12 +30,15 @@ The Snakefile along with all scripts and configuration files are ready for downl
 ### R (v. 4.0.0)
 * Data parsing and visualization script
 
-### And coding style tests
+## Usage
 
-Explain what these tests test and why
-
+To use the Snakefile script with all of its configurations on a cluster, use the following code
 ```
-Give an example
+snakemake -j 13 --cluster-config /projects/fs1/nino/bin/config_files/lunarc_config.json --cluster "sbatch -A {cluster.account} -p {cluster.partition} --tasks-per-node {cluster.tasks-per-node}  -t {cluster.time} -o {cluster.o} -e {cluster.e} -J {cluster.J} -N {cluster.N}" --latency-wait 60
+```
+To use the dry run option and proof check Snakemake's functionality add the flag -n:
+```
+snakemake -j 13 -n
 ```
 
 ## Deployment
