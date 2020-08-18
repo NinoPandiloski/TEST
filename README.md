@@ -26,7 +26,7 @@ The Snakefile along with all scripts and configuration files are ready for downl
 * MultiQC (v. 1.2)
 * Bowtie (v. 2.3.4.2)
 * Samtools (v 1.9)
-* bamCoverage (v. __)
+* bamCoverage (v. 2.4.3)
 * SEACR (v. 1.3)
 * SEACR_R (v. 1.3) 
 * BEDTools (v. 2.26.0)
@@ -45,7 +45,3 @@ To use the dry run option and proof check Snakemake's functionality add the flag
 ```
 snakemake -j 13 -n
 ```
-
-## Acknowledgments
-
-
